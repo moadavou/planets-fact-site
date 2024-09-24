@@ -1,0 +1,205 @@
+:root {
+  --clr-primary-mercury: hsl(var(--clr-primary-mercury-hsl));
+  --clr-primary-mercury-hsl: 194, 48%, 49%;
+  --clr-primary-venus: hsl(var(--clr-primary-venus-hsl));
+  --clr-primary-venus-hsl: 33, 82%, 61%;
+  --clr-primary-earth: hsl(var(--clr-primary-earth-hsl));
+  --clr-primary-earth-hsl: 263, 67%, 51%;
+  --clr-primary-mars: hsl(var(--clr-primary-mars-hsl));
+  --clr-primary-mars-hsl: 10, 63%, 51%;
+  --clr-primary-jupiter: hsl(var(--clr-primary-jupiter-hsl));
+  --clr-primary-jupiter-hsl: 2, 68%, 53%;
+  --clr-primary-saturn: hsl(var(--clr-primary-saturn-hsl));
+  --clr-primary-saturn-hsl: 17, 73%, 46%;
+  --clr-primary-uranus: hsl(var(--clr-primary-uranus-hsl));
+  --clr-primary-uranus-hsl: 169, 73%, 44%;
+  --clr-primary-neptune: hsl(var(--clr-primary-neptune-hsl));
+  --clr-primary-neptune-hsl: 222, 87%, 56%;
+  --clr-neutral-100: hsl(var(--clr-neutral-100-hsl));
+  --clr-neutral-100-hsl: 0, 0%, 100%;
+  --clr-neutral-400: hsl(var(--clr-neutral-400-hsl));
+  --clr-neutral-400-hsl: 240, 6%, 54%;
+  --clr-neutral-700: hsl(var(--clr-neutral-700-hsl));
+  --clr-neutral-700-hsl: 240, 17%, 26%;
+  --clr-neutral-800: hsl(var(--clr-neutral-800-hsl));
+  --clr-neutral-800-hsl: 240, 67%, 8%;
+  --fs-stats: 2.5rem;
+  --fs-stats-ribbon: 0 5rem;
+  --fs-nav: 0.9375rem;
+  --fs-button: 0.5625rem;
+  --fs-body: 0.6875rem;
+  --fs-title: 2.5rem;
+}
+@media (min-width: 55rem) {
+  :root {
+    --fs-stats: 1.5rem;
+    --fs-stats-ribbon: 0.5rem;
+    --fs-nav: 0.6875rem;
+    --fs-button: 0.5625rem;
+    --fs-body: 0.6875rem;
+    --fs-title: 3rem;
+  }
+}
+@media (min-width: 75rem) {
+  :root {
+    --fs-stats: 1.25rem;
+    --fs-stats-ribbon: 0.6875rem;
+    --fs-nav: 0.6875rem;
+    --fs-button: 0.75rem;
+    --fs-body: 0.875rem;
+    --fs-title: 5rem;
+  }
+}
+
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  width: min(100% - 3rem, 50rem);
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* purgecss ignore */
+:where(.flow > :not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.text-primary-mercury {
+  color: hsl(194, 48%, 49%);
+}
+
+.bg-primary-mercury {
+  color: hsl(194, 48%, 49%);
+}
+
+.text-primary-venus {
+  color: hsl(33, 82%, 61%);
+}
+
+.bg-primary-venus {
+  color: hsl(33, 82%, 61%);
+}
+
+.text-primary-earth {
+  color: hsl(263, 67%, 51%);
+}
+
+.bg-primary-earth {
+  color: hsl(263, 67%, 51%);
+}
+
+.text-primary-mars {
+  color: hsl(10, 63%, 51%);
+}
+
+.bg-primary-mars {
+  color: hsl(10, 63%, 51%);
+}
+
+.text-primary-jupiter {
+  color: hsl(2, 68%, 53%);
+}
+
+.bg-primary-jupiter {
+  color: hsl(2, 68%, 53%);
+}
+
+.text-primary-saturn {
+  color: hsl(17, 73%, 46%);
+}
+
+.bg-primary-saturn {
+  color: hsl(17, 73%, 46%);
+}
+
+.text-primary-uranus {
+  color: hsl(169, 73%, 44%);
+}
+
+.bg-primary-uranus {
+  color: hsl(169, 73%, 44%);
+}
+
+.text-primary-neptune {
+  color: hsl(222, 87%, 56%);
+}
+
+.bg-primary-neptune {
+  color: hsl(222, 87%, 56%);
+}
+
+.text-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-neutral-400 {
+  color: hsl(240, 6%, 54%);
+}
+
+.bg-neutral-400 {
+  color: hsl(240, 6%, 54%);
+}
+
+.text-neutral-700 {
+  color: hsl(240, 17%, 26%);
+}
+
+.bg-neutral-700 {
+  color: hsl(240, 17%, 26%);
+}
+
+.text-neutral-800 {
+  color: hsl(240, 67%, 8%);
+}
+
+.bg-neutral-800 {
+  color: hsl(240, 67%, 8%);
+}
